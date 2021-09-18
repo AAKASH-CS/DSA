@@ -1,5 +1,7 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
+
 int length(char input[]){
     int count= 0;
     for(int i=0; input[i] != '\0'; i++){
@@ -8,13 +10,12 @@ int length(char input[]){
     return count;
 }
 
-
-char mystrcpy(char str1[],char str2[]){
+void mystrcpy(char str1[],char str2[]){
 
     int n;
     n=length(str2);
 
-    for(int i=0; i<n; i++){
+    for(int i=0;i<=n;i++){
         str1[i]=str2[i];
     }    
     
@@ -24,6 +25,7 @@ int main(){
 
    char str1[100];
    char str2[100];
+   cout<<"Enter two strings : "<<endl;
    cin>>str1>>str2;
 
    cout<<"before copying"<<endl;
