@@ -6,7 +6,6 @@ int main(){
 
     char str1[100];
     char str2[100];
-    int n;
 
     cout<<"Enter the first string : ";
     cin>>str1;
@@ -14,17 +13,14 @@ int main(){
     cout<<"Enter the second string : ";
     cin>>str2;
     cout<<endl;
-    cout<<"Enter the number of character you want to copy : ";
-    cin>>n;
-    cout<<endl;
 
-    cout<<"Before copying the "<<n<<"starting character : "<<endl;
+    cout<<"Before concatenation the value is : "<<endl;
     cout<<"value of str1 "<<str1<<endl;
     cout<<"value of str2 "<<str2<<endl;
 
-    strncpy(str1,str2,n);
+    strcat(str1,str2);
     
-    cout<<"After copying the "<<n<<"starting character : "<<endl;
+    cout<<"After concatenation the value is : "<<endl;
     cout<<"value of str1 "<<str1<<endl;
     cout<<"value of str2 "<<str2<<endl;
 
